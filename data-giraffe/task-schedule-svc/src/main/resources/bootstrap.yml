@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: task-schedule-svc
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true

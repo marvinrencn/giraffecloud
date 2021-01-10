@@ -1,0 +1,63 @@
+.DS_Store
+node_modules
+/dist
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# java class file
+*.class
+
+# Package Files #
+*.war
+*.ear
+/target
+/.settings
+/.classpath
+/.project
+/.idea
+
+# ignore Maven generated target folders
+target
+out
+
+# ignore eclipse files
+.project
+.classpath
+.settings
+.factorypath
+.metadata
+.idea
+*.iml
+
+# ignore log files
+*.log
+
+# nocas
+infrastructure/nacos/data
+infrastructure/nacos/logs
