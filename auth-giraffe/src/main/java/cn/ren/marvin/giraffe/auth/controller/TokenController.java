@@ -37,7 +37,7 @@ public class TokenController {
         tokenServices.revokeToken(tokenId);
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/tokens/{clientId}")
+    @RequestMapping(method = RequestMethod.GET, value = "/oauth/tokens/{clientId}")
     @ResponseBody
     public List<String> getTokens(@PathVariable String clientId) {
         List<String> tokenValues = new ArrayList<String>();
@@ -50,7 +50,7 @@ public class TokenController {
         return tokenValues;
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/tokens/revokeRefreshToken/{tokenId:.*}")
+    @RequestMapping(method = RequestMethod.POST, value = "/oauth/tokens/revokeRefreshToken/{tokenId:.*}")
     @ResponseBody
     public String revokeRefreshToken(@PathVariable String tokenId) {
         if (tokenStore instanceof JdbcTokenStore) {

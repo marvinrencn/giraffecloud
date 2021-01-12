@@ -26,7 +26,19 @@
     </properties>
 
 
-    <!-- <repositories>
+    <repositories>
+        <repository>
+            <id>maven-ali</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public//</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
         <repository>
             <id>oss</id>
             <name>oss</name>
@@ -45,7 +57,7 @@
             <name>Sonatype Nexus Snapshots</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
-    </repositories> -->
+    </repositories>
 
     <dependencyManagement>
         <dependencies>

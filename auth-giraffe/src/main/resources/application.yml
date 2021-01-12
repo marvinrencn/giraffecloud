@@ -1,11 +1,14 @@
-server:
-  port: 8081
 spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
   datasource:
-    url: jdbc:mysql://localhost:3306/zendata?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/giraffedata?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+    #initialization-mode: always
     data: classpath:data.sql
   jpa:
     show-sql: true
@@ -22,3 +25,11 @@ logging:
     org.springframework.security: WARN
     org.springframework.web: ERROR
     org.hibernate: WARN
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        exclude: heapdump,dump,threaddump,configprops,env
+  security:
+    enabled: false

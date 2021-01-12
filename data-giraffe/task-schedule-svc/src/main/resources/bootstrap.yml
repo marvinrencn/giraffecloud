@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 9091
 spring:
   application:
     name: task-schedule-svc
@@ -8,6 +8,8 @@ spring:
       config:
         server-addr: 127.0.0.1:8848
         file-extension: yaml
+      discovery:
+        server-addr: 127.0.0.1:8848
   profiles:
     active: dev
   main:

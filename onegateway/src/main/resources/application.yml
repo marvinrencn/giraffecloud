@@ -3,6 +3,17 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
+      datasource:
+        gw-flow:
+          nacos:
+            server-addr: 127.0.0.1:8848
+            dataId: ${spring.application.name}-gateway-flow.json
+            groupId: SENTINEL_GROUP
+            rule-type: flow
+            data-type: json
     gateway:
       discovery:
         locator:
@@ -20,7 +31,7 @@ spring:
             allow-credentials: true
       routes:
         - id: auth-giraffe
-          uri: http://localhost:8081
+          uri: lb://auth-giraffe
           predicates:
             - Path=/oauth/**
         - id: task-schedule
@@ -35,9 +46,10 @@ spring:
           filters:
             - StripPrefix= 1
         - id: front-end
-          uri: https://localhost:8080
+          uri: http://localhost:8001
           predicates:
             - Path=/**
+
 management:
   endpoints:
     web:
@@ -46,3 +58,7 @@ management:
         exclude: heapdump,dump,threaddump,configprops,env
   security:
     enabled: false
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
