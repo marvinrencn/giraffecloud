@@ -29,7 +29,9 @@ import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenCo
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author ：marvin ren
@@ -61,7 +63,8 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
     @Override
     public void configure(final AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
         oauthServer.tokenKeyAccess("permitAll()")
-                .checkTokenAccess("isAuthenticated()")
+//                .checkTokenAccess("isAuthenticated()")
+                .checkTokenAccess("permitAll()")
                 //开启支持通过表单方式提交client_id和client_secret,否则请求时以basic auth方式,头信息传递Authorization发送请求
                 .allowFormAuthenticationForClients();
     }
@@ -78,13 +81,18 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
 
     @Override
     public void configure(final AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+
         //增加token的返回内容
         final TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
-        tokenEnhancerChain.setTokenEnhancers(Arrays.asList(tokenEnhancer()));
+        List<TokenEnhancer> delegates = new ArrayList<>();
+        delegates.add(tokenEnhancer());
+        delegates.add(accessTokenConverter());
+        tokenEnhancerChain.setTokenEnhancers(delegates);
+
         //允许GET和POST模式读取
-        endpoints.allowedTokenEndpointRequestMethods(HttpMethod.GET,HttpMethod.POST);
-        endpoints.exceptionTranslator(loggingExceptionTranslator());
-        endpoints.tokenStore(tokenStore())
+        endpoints.allowedTokenEndpointRequestMethods(HttpMethod.GET,HttpMethod.POST)
+                .exceptionTranslator(loggingExceptionTranslator())
+                .tokenStore(tokenStore())
                 .tokenEnhancer(tokenEnhancerChain)
                 .accessTokenConverter(accessTokenConverter())
                 .authenticationManager(authenticationManager);
