@@ -1,7 +1,7 @@
 package cn.ren.marvin.giraffe.auth.configure;
 
 import cn.ren.marvin.giraffe.auth.constant.AuthConstants;
-import cn.ren.marvin.giraffe.auth.domain.User;
+import cn.ren.marvin.giraffe.auth.domain.UserInfo;
 import cn.ren.marvin.giraffe.auth.service.UserDetailsServiceImpl;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
@@ -117,9 +117,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     public TokenEnhancer tokenEnhancer() {
         return (accessToken, authentication) -> {
             Map<String, Object> map = new HashMap<>(2);
-            User user = (User) authentication.getUserAuthentication().getPrincipal();
+            UserInfo user = (UserInfo) authentication.getUserAuthentication().getPrincipal();
             map.put(AuthConstants.JWT_USER_ID_KEY, user.getId());
-            map.put(AuthConstants.JWT_CLIENT_ID_KEY, user.getClientId());
             ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(map);
             return accessToken;
         };

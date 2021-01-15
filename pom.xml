@@ -14,8 +14,7 @@
         <module>tests-giraffe</module>
         <module>auth-giraffe</module>
         <module>giraffe-auth</module>
-        <module>giraffe-cloud-gateway</module>
-        <module>giraffe-user</module>
+        <module>giraffe-gateway</module>
         <module>giraffe-common</module>
     </modules>
 
