@@ -9,13 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>common-lib</module>
+        <module>giraffe-common</module>
         <module>data-giraffe</module>
         <module>tests-giraffe</module>
-        <module>auth-giraffe</module>
         <module>giraffe-auth</module>
         <module>giraffe-gateway</module>
-        <module>giraffe-common</module>
     </modules>
 
     <properties>
@@ -90,7 +88,7 @@
                 <version>1.2.33</version>
             </dependency>
             <dependency>
-                <artifactId>common-lib</artifactId>
+                <artifactId>web-jpa-common</artifactId>
                 <groupId>cn.ren.marvin</groupId>
                 <version>1.0.0</version>
             </dependency>

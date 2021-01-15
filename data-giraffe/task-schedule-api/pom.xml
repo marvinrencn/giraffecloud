@@ -14,7 +14,8 @@
     <dependencies>
         <dependency>
             <groupId>cn.ren.marvin</groupId>
-            <artifactId>common-lib</artifactId>
+            <artifactId>web-jpa-common</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 </project>

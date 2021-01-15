@@ -1,1 +1,0 @@
-INSERT INTO `auth_user_info`(id, authority_codes, username,password,display_name,status,mobile,email)VALUES('1', NULL, 'admin', '$2a$10$pKUhNEMIA4e6Licks0RcdOBKI2PCnnpLNYUxZKZTFxpAr17Wkj7Ce', 'administrator', 1, '186', 'marvinrencn@gmail.com');

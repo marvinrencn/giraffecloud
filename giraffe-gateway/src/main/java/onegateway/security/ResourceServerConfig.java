@@ -43,6 +43,7 @@ public class ResourceServerConfig {
         http.oauth2ResourceServer().authenticationEntryPoint(authenticationEntryPoint());
         http.authorizeExchange()
                 .pathMatchers("/oauth/token").permitAll()
+                .pathMatchers("/api/**").authenticated()
                 .anyExchange().access(authorizationManager)
                 .and()
                 .exceptionHandling()
