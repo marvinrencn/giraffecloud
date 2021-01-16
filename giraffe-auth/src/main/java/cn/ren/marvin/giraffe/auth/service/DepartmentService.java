@@ -88,7 +88,9 @@ public class DepartmentService {
                 .name(dto.getName())
                 .mobile(dto.getMobile())
                 .status(dto.getStatus())
-                .email(dto.getEmail()).build();
+                .email(dto.getEmail())
+                .notes(dto.getNotes())
+                .build();
         if (StringUtils.isNotEmpty(dto.getParentId())) {
             Optional<DepartmentInfo> parentDepartment = departmentInfoRepository.findById(dto.getParentId());
             parentDepartment.orElseThrow(() -> new NotFoundException("The Parent Department Not Found"));

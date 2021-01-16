@@ -25,6 +25,7 @@ public class DepartmentDto {
     private String mobile;
     private String email;
     private int status;
+    private String notes;
     private String parentId;
     private String parentName;
     private List<DepartmentDto> children;

@@ -32,6 +32,7 @@ public class DepartmentInfo {
     private String mobile;
     private String email;
     private int status;
+    private String notes;
 
 
     @ManyToMany(cascade = CascadeType.REFRESH)
