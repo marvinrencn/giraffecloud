@@ -28,6 +28,10 @@ public class DepartmentInfo {
     @GeneratedValue(generator = "idGenerator")
     private String id;
     private String name;
+    private String leader;
+    private String mobile;
+    private String email;
+    private int status;
 
 
     @ManyToMany(cascade = CascadeType.REFRESH)
@@ -36,8 +40,8 @@ public class DepartmentInfo {
             joinColumns = @JoinColumn(name = "department_id"))
     private Set<RoleInfo> roleInfos;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "parent")
-    private Set<DepartmentInfo> children;
+//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "parent")
+//    private Set<DepartmentInfo> children;
 
     @ManyToOne
     private DepartmentInfo parent;

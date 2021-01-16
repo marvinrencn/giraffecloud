@@ -1,0 +1,158 @@
+2021-01-15 16:22:25,438 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:22:25,446 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 16:23:35,119 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:23:35,119 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 16:25:41,737 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:25:41,737 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 16:26:01,482 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:26:01,482 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 16:26:33,996 INFO DEFAULT_GROUP@@giraffe-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:8000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:26:33,997 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-gateway, ips: 
+
+2021-01-15 16:26:51,117 INFO DEFAULT_GROUP@@giraffe-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:8000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:26:51,117 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-gateway, ips: 192.168.32.128:8000_true,
+
+2021-01-15 16:34:26,472 INFO DEFAULT_GROUP@@task-schedule-svc {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9091:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:34:26,472 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@task-schedule-svc, ips: 192.168.32.128:9091_true,
+
+2021-01-15 16:38:34,966 INFO {POS} {IP-DISABLED} valid: 192.168.32.128:9091@DEFAULT@DEFAULT_GROUP@@task-schedule-svc, region: unknown, msg: client timeout after 15000, last beat: 1610699773376
+
+2021-01-15 16:38:34,966 INFO {POS} {IP-DISABLED} valid: 192.168.32.128:8000@DEFAULT@DEFAULT_GROUP@@giraffe-gateway, region: unknown, msg: client timeout after 15000, last beat: 1610699773353
+
+2021-01-15 16:38:37,047 INFO service: DEFAULT_GROUP@@task-schedule-svc {POS} {IP-ENABLED} valid: 192.168.32.128:9091@DEFAULT, region: unknown, msg: client beat ok
+
+2021-01-15 16:38:37,047 INFO service: DEFAULT_GROUP@@giraffe-gateway {POS} {IP-ENABLED} valid: 192.168.32.128:8000@DEFAULT, region: unknown, msg: client beat ok
+
+2021-01-15 16:38:37,158 INFO DEFAULT_GROUP@@task-schedule-svc {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9091:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:38:37,158 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@task-schedule-svc, ips: 
+
+2021-01-15 16:38:37,158 INFO DEFAULT_GROUP@@giraffe-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:8000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:38:37,159 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-gateway, ips: 
+
+2021-01-15 16:38:40,877 INFO DEFAULT_GROUP@@task-schedule-svc {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9091:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:38:40,877 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@task-schedule-svc, ips: 192.168.32.128:9091_true,
+
+2021-01-15 16:38:41,184 INFO DEFAULT_GROUP@@giraffe-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:8000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:38:41,184 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-gateway, ips: 192.168.32.128:8000_true,
+
+2021-01-15 16:41:28,522 INFO DEFAULT_GROUP@@giraffe-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:8000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:41:28,522 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-gateway, ips: 
+
+2021-01-15 16:41:46,467 INFO DEFAULT_GROUP@@giraffe-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:8000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:41:46,467 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-gateway, ips: 192.168.32.128:8000_true,
+
+2021-01-15 16:49:59,032 INFO DEFAULT_GROUP@@task-schedule-svc {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9091:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:49:59,032 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@task-schedule-svc, ips: 
+
+2021-01-15 16:49:59,588 INFO DEFAULT_GROUP@@giraffe-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:8000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 16:49:59,588 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-gateway, ips: 
+
+2021-01-15 20:09:27,623 INFO {POS} {IP-DISABLED} valid: 192.168.32.128:9000@DEFAULT@DEFAULT_GROUP@@giraffe-auth, region: unknown, msg: client timeout after 15000, last beat: 1610702959899
+
+2021-01-15 20:09:27,636 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-01-15 20:09:27,637 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 20:09:29,758 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 20:09:29,758 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 20:59:17,954 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 20:59:17,958 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 20:59:45,603 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 20:59:45,604 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 21:04:39,195 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:04:39,195 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 21:04:53,582 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:04:53,582 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 21:08:51,413 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:08:51,413 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 21:09:06,034 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:09:06,034 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 21:09:21,831 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:09:21,831 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 21:09:34,210 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:09:34,210 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 21:13:48,208 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:13:48,208 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 21:14:04,532 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:14:04,532 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 21:39:08,635 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:39:08,635 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 21:39:25,042 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 21:39:25,042 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 22:12:36,283 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 22:12:36,283 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 22:12:56,578 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 22:12:56,578 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 22:44:03,194 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 22:44:03,194 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 22:44:19,615 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 22:44:19,615 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 22:46:42,194 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 22:46:42,194 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 22:46:56,549 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 22:46:56,549 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+
+2021-01-15 22:47:08,799 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 22:47:08,799 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 
+
+2021-01-15 22:47:22,570 INFO DEFAULT_GROUP@@giraffe-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.32.128:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-01-15 22:47:22,570 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@giraffe-auth, ips: 192.168.32.128:9000_true,
+

@@ -1,0 +1,95 @@
+2021-01-15 16:22:26,448 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 16:23:36,120 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 16:25:42,737 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 16:26:02,483 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 16:26:34,998 INFO DEFAULT_GROUP@@giraffe-gateway is changed, add it to push queue.
+
+2021-01-15 16:26:52,118 INFO DEFAULT_GROUP@@giraffe-gateway is changed, add it to push queue.
+
+2021-01-15 16:34:27,472 INFO DEFAULT_GROUP@@task-schedule-svc is changed, add it to push queue.
+
+2021-01-15 16:38:35,967 INFO DEFAULT_GROUP@@giraffe-gateway is changed, add it to push queue.
+
+2021-01-15 16:38:35,969 INFO DEFAULT_GROUP@@task-schedule-svc is changed, add it to push queue.
+
+2021-01-15 16:38:38,050 INFO DEFAULT_GROUP@@task-schedule-svc is changed, add it to push queue.
+
+2021-01-15 16:38:38,050 INFO DEFAULT_GROUP@@giraffe-gateway is changed, add it to push queue.
+
+2021-01-15 16:38:41,886 INFO DEFAULT_GROUP@@task-schedule-svc is changed, add it to push queue.
+
+2021-01-15 16:38:42,186 INFO DEFAULT_GROUP@@giraffe-gateway is changed, add it to push queue.
+
+2021-01-15 16:41:29,523 INFO DEFAULT_GROUP@@giraffe-gateway is changed, add it to push queue.
+
+2021-01-15 16:41:47,468 INFO DEFAULT_GROUP@@giraffe-gateway is changed, add it to push queue.
+
+2021-01-15 16:50:00,033 INFO DEFAULT_GROUP@@task-schedule-svc is changed, add it to push queue.
+
+2021-01-15 16:50:00,037 INFO serviceName: DEFAULT_GROUP@@task-schedule-svc changed, schedule push for: 127.0.1.1:43735, agent: Nacos-Java-Client:v1.1.4, key: 127.0.1.1,43735,2474995581561
+
+2021-01-15 16:50:00,037 INFO send udp packet: 127.0.1.1,43735,2474995581561
+
+2021-01-15 16:50:00,047 ERROR [NACOS-PUSH] error while receiving ack data
+
+java.lang.IllegalStateException: unable to find ackEntry for key: 127.0.0.1,43735,2474995581561, ack json: {"type": "push-ack", "lastRefTime":"2474995581561", "data":""}
+	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:677)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-15 16:50:00,588 INFO DEFAULT_GROUP@@giraffe-gateway is changed, add it to push queue.
+
+2021-01-15 16:50:10,042 INFO retry to push data, key: 127.0.1.1,43735,2474995581561
+
+2021-01-15 16:50:10,043 INFO send udp packet: 127.0.1.1,43735,2474995581561
+
+2021-01-15 16:50:20,044 INFO retry to push data, key: 127.0.1.1,43735,2474995581561
+
+2021-01-15 16:50:20,045 WARN max re-push times reached, retry times 2, key: 127.0.1.1,43735,2474995581561
+
+2021-01-15 20:09:28,624 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 20:09:30,764 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 20:59:18,955 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 20:59:46,604 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:04:40,195 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:04:54,583 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:08:52,413 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:09:07,035 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:09:22,832 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:09:35,211 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:13:49,209 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:14:05,533 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:39:09,636 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 21:39:26,043 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 22:12:37,283 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 22:12:57,578 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 22:44:04,196 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 22:44:20,616 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 22:46:43,195 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 22:46:57,550 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 22:47:09,799 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+
+2021-01-15 22:47:23,571 INFO DEFAULT_GROUP@@giraffe-auth is changed, add it to push queue.
+

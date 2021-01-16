@@ -2,6 +2,7 @@ package cn.ren.marvin.giraffe.common.error;
 
 import cn.ren.marvin.giraffe.common.api.BaseResponse;
 import cn.ren.marvin.giraffe.common.api.ResultCode;
+import cn.ren.marvin.giraffe.common.exception.ServiceException;
 import com.alibaba.csp.sentinel.slots.block.AbstractRule;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import org.hibernate.validator.internal.engine.path.PathImpl;

@@ -1,4 +1,4 @@
-package cn.ren.marvin.giraffe.common.error;
+package cn.ren.marvin.giraffe.common.exception;
 
 import cn.ren.marvin.giraffe.common.api.ResultCode;
 import lombok.Getter;

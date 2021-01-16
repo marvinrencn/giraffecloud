@@ -2,7 +2,7 @@ package cn.ren.marvin.giraffe.auth.service;
 
 import cn.ren.marvin.giraffe.auth.domain.UserInfo;
 import cn.ren.marvin.giraffe.auth.repo.UserInfoRepository;
-import cn.ren.marvin.giraffe.auth.service.dto.UserInfoDto;
+import cn.ren.marvin.giraffe.auth.dto.UserInfoDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

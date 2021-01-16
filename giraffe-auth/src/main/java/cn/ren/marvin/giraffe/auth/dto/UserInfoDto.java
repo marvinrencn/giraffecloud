@@ -1,4 +1,4 @@
-package cn.ren.marvin.giraffe.auth.service.dto;
+package cn.ren.marvin.giraffe.auth.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
