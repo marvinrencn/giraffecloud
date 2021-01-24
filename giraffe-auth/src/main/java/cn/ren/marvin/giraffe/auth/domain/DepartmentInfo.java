@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -34,6 +35,8 @@ public class DepartmentInfo {
     private int status;
     private String notes;
 
+    @ManyToMany(mappedBy = "departmentInfos", fetch = FetchType.LAZY)
+    private List<UserInfo> userInfos;
 
     @ManyToMany(cascade = CascadeType.REFRESH)
     @JoinTable(name = "auth_department_role_rel",

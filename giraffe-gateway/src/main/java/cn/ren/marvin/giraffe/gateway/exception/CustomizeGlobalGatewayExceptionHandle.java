@@ -1,4 +1,4 @@
-package onegateway.exception;
+package cn.ren.marvin.giraffe.gateway.exception;
 
 import com.alibaba.csp.sentinel.slots.block.flow.FlowException;
 import org.slf4j.Logger;
@@ -86,7 +86,8 @@ public class CustomizeGlobalGatewayExceptionHandle implements ErrorWebExceptionH
         // 按照异常类型进行处理
         HttpStatus httpStatus;
         String body;
-        log.error("===={}", ex.getClass());
+        // 打印异常
+        ex.printStackTrace();
         if (ex instanceof NotFoundException) {
             httpStatus = HttpStatus.NOT_FOUND;
             body = "Service Not Found";

@@ -45,11 +45,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         UserInfo user = optionalUser.get();
 
         if (!user.isEnabled()) {
-            throw new DisabledException("该账户已被禁用!");
+            throw new DisabledException("the account is disabled!");
         } else if (!user.isAccountNonLocked()) {
-            throw new LockedException("该账号已被锁定!");
+            throw new LockedException("the account is locked!");
         } else if (!user.isAccountNonExpired()) {
-            throw new AccountExpiredException("该账号已过期!");
+            throw new AccountExpiredException("this account is expired!");
         }
         return user;
     }

@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 /**
  * @author ：marvin ren
  * @date ：Created in 1/8/2021 3:30 PM
@@ -22,7 +24,7 @@ public class UserInfoDto {
 
     private String username;
 
-    private Integer status;
+    private Integer state;
 
     private String displayName;
 
@@ -30,5 +32,20 @@ public class UserInfoDto {
 
     private String email;
 
-    private String authorityCodes;
+    private String notes;
+
+    private Set<String> roleIds;
+
+    private Set<String> departmentIds;
+
+    private Set<String> roleCodes;
+
+    private Set<String> roleNames;
+
+    private Set<String> departmentNames;
+
+    private String password;
+
+    private String confirm;
+
 }

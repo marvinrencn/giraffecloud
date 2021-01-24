@@ -29,10 +29,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests().requestMatchers(EndpointRequest.toAnyEndpoint()).permitAll()
                 .and()
-                .authorizeRequests().antMatchers("/oauth/tokens/**", "/oauth/getPublicKey","/oauth/logout").permitAll()
+                .authorizeRequests().antMatchers("/oauth/tokens/**", "/oauth/getPublicKey","/oauth/logout", "/oauth/resourcePathRule").permitAll()
+                // TODO: 1/20/2021 add authenticate path /api/auth
                 .and()
-                //todo: remove
-                .authorizeRequests().antMatchers("/api/auth/**").permitAll()
+                .authorizeRequests().antMatchers("/api/auth/**").anonymous()
                 .anyRequest().authenticated()
                 .and()
                 .csrf().disable();

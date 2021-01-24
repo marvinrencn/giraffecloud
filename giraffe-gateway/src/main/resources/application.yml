@@ -31,18 +31,18 @@ spring:
             allowed-headers: "*"
             allow-credentials: true
       routes:
-        - id: giraffe-auth
+        - id: giraffe-oauth
           uri: lb://giraffe-auth
           predicates:
-            - Path=/oauth/**
+            - Path=/oauth/**, /api/auth/**
         - id: task-schedule
           uri: lb://task-schedule-svc
           predicates:
             - Path=/api/taskschedule/**
-        - id: front-end
-          uri: http://localhost:4000
-          predicates:
-            - Path=/**
+#        - id: front-end
+#          uri: http://localhost:4000
+#          predicates:
+#            - Path=/**
   security:
     oauth2:
       resourceserver:
@@ -60,4 +60,5 @@ management:
 
 logging:
   level:
-    org.springframework.cloud.gateway: debug
+    cn.ren.marvin.giraffe: debug
+    org.springframework.cloud.gateway: warn

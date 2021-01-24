@@ -1,4 +1,4 @@
-package onegateway.configueration;
+package cn.ren.marvin.giraffe.gateway.configueration;
 
 import com.alibaba.cloud.sentinel.SentinelProperties;
 import com.alibaba.csp.sentinel.adapter.gateway.sc.SentinelGatewayFilter;

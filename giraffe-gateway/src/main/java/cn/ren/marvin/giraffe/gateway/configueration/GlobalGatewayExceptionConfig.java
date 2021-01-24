@@ -1,6 +1,6 @@
-package onegateway.configueration;
+package cn.ren.marvin.giraffe.gateway.configueration;
 
-import onegateway.exception.CustomizeGlobalGatewayExceptionHandle;
+import cn.ren.marvin.giraffe.gateway.exception.CustomizeGlobalGatewayExceptionHandle;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.web.reactive.error.ErrorWebExceptionHandler;
 import org.springframework.context.annotation.Bean;

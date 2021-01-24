@@ -40,7 +40,8 @@ public class UserInfo implements UserDetails{
 
     private String password;
 
-    private Integer status;
+    @Builder.Default
+    private int state = 1;
 
     private String displayName;
 
@@ -48,8 +49,7 @@ public class UserInfo implements UserDetails{
 
     private String email;
 
-    @Column(length = 2048)
-    private String authorityCodes;
+    private String notes;
 
     @ManyToMany(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
     @JoinTable(name = "auth_user_role_rel",
@@ -57,15 +57,18 @@ public class UserInfo implements UserDetails{
             joinColumns = @JoinColumn(name = "user_id"))
     private Set<RoleInfo> roleInfos;
 
+    @ManyToMany(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
+    @JoinTable(name = "auth_user_department_rel",
+            inverseJoinColumns = @JoinColumn(name = "department_id"),
+            joinColumns = @JoinColumn(name = "user_id"))
+    private Set<DepartmentInfo> departmentInfos;
+
     @JsonIgnore
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Set<SimpleGrantedAuthority> authorities = new HashSet<>();
-        if(authorityCodes != null){
-        authorities.addAll(Arrays.stream(authorityCodes.split(",")).map(SimpleGrantedAuthority::new).collect(Collectors.toSet()));
-        }
         if(roleInfos != null) {
-            roleInfos.forEach((r) -> authorities.addAll(Arrays.stream(r.getAuthorityCodes().split(",")).map(SimpleGrantedAuthority::new).collect(Collectors.toSet())));
+            authorities.addAll(roleInfos.stream().map(RoleInfo::getCode).map(SimpleGrantedAuthority::new).collect(Collectors.toSet()));
         }
         return authorities;
     }
@@ -101,6 +104,6 @@ public class UserInfo implements UserDetails{
     @JsonIgnore
     @Override
     public boolean isEnabled() {
-        return true;
+        return state==1;
     }
 }
